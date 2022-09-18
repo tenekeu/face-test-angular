@@ -1,0 +1,7 @@
+<div class="face-snap-card"  [ngClass]="{morevert: clickOn!='Oh sap'}">
+<h1>{{faceTest.nom}} {{faceTest.prenom}}</h1>
+<p>{{faceTest.description}}</p>
+<p>mise en ligne le {{faceTest.createDate}}</p>
+<img [src]="faceTest.srcImg">
+<p><button (click)="onAddSnap()">{{clickOn}}</button>Like {{faceTest.snaps}}</p>
+</div>
